@@ -1,6 +1,6 @@
 class Okcoin
   class Rest
-    BASE_URI = "https://www.okcoin.com/api"
+    BASE_URI = "https://www.okex.com/api"
     TIMEOUT = 0.5
 
     def initialize(api_key: nil, secret_key: nil)
