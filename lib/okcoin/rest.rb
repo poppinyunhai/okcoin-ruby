@@ -17,8 +17,8 @@ class Okcoin
         get_request(url: "/v1/ticker.do", query: query)
       end
 
-      def spot_orderbook(pair: "btc_usd", items_no: 50, merge: 0)
-        query = { "symbol" => pair, "size" => items_no, "merge" => merge }
+      def spot_orderbook(pair: "btc_usd")
+        query = { "symbol" => pair}
         get_request(url: "/v1/depth.do", query: query)
       end
 
